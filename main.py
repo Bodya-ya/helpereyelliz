@@ -1,5 +1,4 @@
 import telebot
-from pyexpat import native_encoding
 from telebot.types import Message, ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 from dotenv import load_dotenv
 from os import getenv
@@ -33,20 +32,6 @@ def start(message: Message):
             f"🆔 ID: {message.from_user.id}\n"
             f"📧 Юзернейм: @{message.from_user.username}"
     )
-    # keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
-    # keyboard.add("TELEGRAM🔵⚪", url = "t.me/eyelliz")
-    # keyboard.add("NIGHT YIN-YANG⚫⚪")
-    # keyboard.add("MOV CS FROM EYELLIZ🏃")
-    # keyboard.add("VK🔵")
-    # keyboard.add("TWITCH🟣")
-    # keyboard.add("FACEIT🟠")
-    # keyboard.add("OSU!🐙")
-    # keyboard.add("STEAM🔵🎮")
-    # keyboard.add("DISCORD🔵🎧")
-    # keyboard.add("TIKTOK⚫🔴")
-    # keyboard.add("YANDEX.MUSIC🟡⚫")
-
-
     if name == "eyelliz":
         bot.send_message(
             chat_id=message.chat.id,
@@ -99,7 +84,7 @@ def start(message: Message):
             reply_markup = reply_markup,
     )
 
-@bot.message_handler(func=lambda message: True)
+@bot.message_handler(content_types=['text', 'audio', "document", "photo", "sticker", "video", "video_note", "voice"])
 def forward_all_messages(message):
         bot.forward_message(911334605, message.chat.id, message.message_id)
         user_info = (
