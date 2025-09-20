@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe1044b8-2e74-46cb-b861-e76ea18c2552" name="Changes" comment="1 try">
+    <list default="true" id="fe1044b8-2e74-46cb-b861-e76ea18c2552" name="Changes" comment="requiremets">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +75,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758334619801</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="requiremets">
+      <option name="closed" value="true" />
+      <created>1758335426394</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758335426394</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,6 +99,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1 try" />
-    <option name="LAST_COMMIT_MESSAGE" value="1 try" />
+    <MESSAGE value="requiremets" />
+    <option name="LAST_COMMIT_MESSAGE" value="requiremets" />
   </component>
 </project>

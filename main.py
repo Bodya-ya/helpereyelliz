@@ -55,7 +55,7 @@ def start(message: Message):
         )
     elif user_id == 2104659191:
         bot.send_message(
-            chat_id=message.chat.id and 911334605,
+            chat_id=message.chat.id,
             text=f"Максимушка, че интересно стало?",
             reply_markup=reply_markup,
 
