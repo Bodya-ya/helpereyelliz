@@ -84,6 +84,7 @@ def start(message: Message):
             reply_markup = reply_markup,
     )
 
+
 @bot.message_handler(content_types=['text', 'audio', "document", "photo", "sticker", "video", "video_note", "voice"])
 def forward_all_messages(message):
         bot.forward_message(911334605, message.chat.id, message.message_id)
@@ -95,6 +96,18 @@ def forward_all_messages(message):
         )
 
         bot.send_message(911334605, user_info)
+        bot.send_sticker(
+            chat_id=message.chat.id,
+            sticker="CAACAgQAAxkBAAEPam9o0FdNVN44ywfYXj_Mh8t6_piwlQACbhsAApvU4FF2uQifM1aUJjYE",
+            reply_to_message_id=message.message_id
+        )
+
+
+
+
+# @bot.message_handler(func=lambda message: message.text.lower())
+
+
 
 
 
